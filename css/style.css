@@ -1,0 +1,133 @@
+.arial {
+  font-family: titleFont, Arial, sans-serif;
+  font-size: 70px;
+  font-weight: lighter;
+  text-align: center;
+  padding: 0px;
+  margin-bottom: -30px;
+  border:0px;
+  vertical-align: middle;
+}
+
+
+@font-face {
+  font-family: titleFont;
+  src: url("../css/Dream Catcher.ttf") format('truetype');
+  font-style: normal;
+}
+
+h2 {
+ overflow: hidden;
+ text-align: center;
+ font-family: "Avenir Next", Arial, sans-serif;
+ font-weight: lighter;
+ text-align: center;
+ margin-top: -110px;
+}
+h2:before,
+h2:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 15%;
+}
+h2:before {
+ right: 0.25em;
+ margin-left: -10%;
+}
+h2:after {
+ left: 0.25em;
+ margin-right: -10%;
+}
+
+.circle {
+	display: inline-block;
+  margin-right: 10px;
+  margin-top: 10px;
+  line-height: 75px;
+  text-align: center;
+  border-radius:50px;
+  top: -50px;
+  height: 75px;
+  width: 75px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 500px;
+  height: 80px;
+  justify-content: center;
+}
+
+.c1 {
+  background: #e7cec9;
+}
+.c1:hover {
+  background: #e7cec9;
+  opacity: 0.75;
+}
+.c2 {
+  background: #f6e4dd;
+}
+.c2:hover {
+  background: #f6e4dd;
+  opacity: 0.75;
+}
+.c3 {
+  background: #f0ddd0;
+}
+.c3:hover {
+  background: #f0ddd0;
+  opacity: 0.75;
+}
+.c4 {
+  background: #f0d0ca;
+}
+.c4:hover {
+  background: #f0d0ca;
+  opacity: 0.75;
+}
+.c5{
+  background: #e1bfbf;
+}
+.c5:hover {
+  background: #e1bfbf;
+  opacity: 0.75;
+}
+
+a:link {
+	color: black;
+	text-decoration: none;
+	letter-spacing: 1px;
+	font-weight: lighter;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 12px;
+
+}
+
+.blurb {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.bio {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: lighter;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  color: black;
+}
+.paint {
+	margin-top: 30px;
+	width: 70px;
+	height: 110px;
+	overflow: hidden;
+}

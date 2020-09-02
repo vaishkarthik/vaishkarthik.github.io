@@ -1,0 +1,306 @@
+.postbody {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  padding: 0px;
+  font-size: 16px;
+  background: #ffffff;
+}
+
+.datetext {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  padding: 0px;
+  margin-bottom: -18px;
+  font-size: 10px;
+  text-align: center;
+  background: white;
+  color: grey;
+}
+
+.ellipsis {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: center;
+}
+.e1 {
+  width: 8px;
+  height: 8px;
+  background-color: lightgrey;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+@font-face {
+  font-family: titleFont;
+  src: url("../css/Dream Catcher.ttf") format('truetype');
+  font-style: normal;
+}
+
+/* Header/Blog Title */
+h1 {
+  font-family: titleFont, Arial, sans-serif;
+  font-weight: normal;
+  padding: 0px;
+  margin-bottom: -40px;
+  font-size: 120px;
+  text-align: center;
+  background: white;
+  color: black;
+}
+
+h2 {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  padding: 0px;
+  font-size: 20px;
+  text-align: center;
+  background: white;
+  color: #cf9184;
+}
+
+h4 {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  padding-top: -40px;
+  margin-top: -40px;
+  padding-bottom: 0px;
+  font-size: 18px;
+  text-align: center;
+  background: white;
+  color: grey;
+}
+/*
+h4:before,
+h4:after {
+ background-color: gray;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 4%;
+ color: gray;
+}
+h4:before {
+ color: #e7cec9;
+ right: 0.25em;
+ margin-left: -5%;
+}
+h4:after {
+ color: #e7cec9;
+ left: 0.25em;
+ margin-right: -5%;
+}*/
+
+h5 {
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 12px;
+  margin-top: -10px;
+  padding-top: -10px;
+  background: white;
+  color: grey;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+/*  float: left;
+*/width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/*.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}*/
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  /*border-bottom-style: solid;
+  border-color: #e3bab2;
+  border-width: 0.5px;*/
+}
+
+.card:after {
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto;  
+  width: 3.5%; /* Change this to whatever width you want. */
+  padding-top: 5px; /* This creates some space between the element and the border. */
+  border-bottom: 1px dotted grey;  
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+.readmore {
+  margin-top: 4px;
+  color: #cf9184;
+  text-decoration: none;
+  font-family: titleFont, Arial, sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  padding-bottom: -1px;
+  /*border-bottom: 0.5px dotted grey;*/
+  font-size: 20px;
+}
+
+.section {
+  color: #cf9184;
+  font-style: italic;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  font-size: 16px;
+  display: inline;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.dropbtn {
+  color: #cf9e94;
+  text-align: center;
+  border: 0.5px solid #d3d3d3;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 77px;
+  height: 77px;
+}
+
+.navtxt {
+  line-height: 75px;
+  width: 75px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: lighter;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-size: 15px;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #e8e8e8;
+  opacity: 0.50
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: fixed;
+  display: inline-block;
+  float: right;
+  bottom: 540px;
+  right: 35px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: -41px;
+  text-align: center
+  background-color: transparent;
+  min-width: 160px;
+  box-shadow: none;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  height: 75px;
+  width: 75px;
+  line-height: 75px;
+  text-align: center;
+  vertical-align: middle;
+  color: black;
+  margin: 7px auto;
+  text-decoration: none;
+  font-family: "Avenir Next", Arial, sans-serif;
+  font-weight: lighter;
+  display: block;
+}
+
+.l1{
+  border-radius: 100%;
+  border: 1px solid #e7cec9;
+}
+
+.l1:hover {
+  background-color: #e7cec9;
+  opacity: 0.25;
+  z-index: -2
+}
+
+.l2{
+  border-radius: 100%;
+  border: 1px solid #f6e4dd;
+}
+
+.l2:hover {
+  background-color: #f6e4dd;
+  opacity: 0.25;
+}
+
+.l3{
+  border-radius: 100%;
+  border: 1px solid #f0ddd0;
+}
+
+.l3:hover {
+  background-color: #f0ddd0;
+  opacity: 0.25;
+}
+
+.l4{
+  border-radius: 100%;
+  border: 1px solid #f0d0ca;
+}
+
+.l4:hover {
+  background-color: #f0d0ca;
+  opacity: 0.25;
+}
+
+.l5{
+  border-radius: 100%;
+  border: 1px solid #e1bfbf;
+}
+
+.l5:hover {
+  background-color: #e1bfbf;
+  opacity: 0.25;
+}
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  /*text-decoration: underline;
+  text-decoration-color: #e7cec9;*/
+  font-style: italic;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
